@@ -32,6 +32,7 @@ dependencies {
        'io.dropwizard:dropwizard-hibernate:' + dropwizardVersion,
        'io.dropwizard:dropwizard-migrations:' + dropwizardVersion,
        'io.dropwizard:dropwizard-auth:' + dropwizardVersion,
+       'com.github.dblock.waffle:waffle-jna:1.5',      
     )
 }
 
