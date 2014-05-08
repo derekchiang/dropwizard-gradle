@@ -4,9 +4,12 @@ apply plugin: 'application'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
-// Use Java 7 by default
-sourceCompatibility = '1.7'
-targetCompatibility = '1.7'
+// Use Java 8 by default
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+dropwizardVersion = "0.7.0"
+mainClassName = "com.example.helloworld.HelloWorldApplication"
 
 // UTF-8 should be standard by now. So use it!
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
@@ -47,7 +50,7 @@ run {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '1.11'
+    gradleVersion = '1.12'
 }
 
 artifacts {
